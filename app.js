@@ -20,7 +20,7 @@ server = app.listen(process.env.PORT || 3000);
 
 
 //socket.io instantiation
-const io = require("socket.io")(server);
+const io = require("socket.io").listen(server);
 
 
 //listen on every connection
