@@ -1,0 +1,114 @@
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+  
+* {
+    box-sizing: border-box;
+}
+  
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+}
+  
+header {
+    text-align: center;
+}
+
+h1 {
+    padding: 20px 0;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+}
+
+div#change_username, section#input_zone {
+    border: 2px outset #000;
+}
+  
+div#change_username {
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    background-color: #ccc;
+}
+
+div#change_username input {
+    width: 76%;
+    height: 25px;
+}
+
+div#change_username button {
+    height: 26px;
+}
+
+section.username {
+    width: 500px;
+    margin: 0 auto;
+}
+  
+section#chatroom {
+    width: 500px;
+    border: 2px inset #000;
+    height: 75%;
+    margin: 0 auto;
+    overflow: auto;
+}
+  
+section#input_zone {
+    width: 500px;
+    height: 5%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ccc;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+  
+input#username {
+    font-family: 'Lato', sans-serif;
+}
+
+input#message {
+    display: inline-block;
+    width: 88%;
+    height: 33px;
+    font-family: 'Lato', sans-serif;
+    font-size: 2vh;
+}
+
+button#send_message {
+    display: inline-block;
+    height: 35px;
+    width: 10%;
+}
+  
+p.message {
+    margin: 0px;
+    width: 100%;
+    height: 40px;
+    font-size: 2vh;
+    font-family: 'Lato', sans-serif;
+    padding: 1vh;
+}
+
+.message:nth-child(even) {
+    background-color: rgb(209, 215, 218);
+}
+
+.message:nth-child(odd) {
+    background-color: rgb(170, 180, 190);
+}
