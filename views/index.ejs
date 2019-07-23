@@ -3,6 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -11,17 +12,19 @@
 </head>
 
 <body>
-	<header>
-		<h1>Chat App</h1>
-	</header>
+	<div class="header-username">
+		<header>
+			<h1>Chat App</h1>
+		</header>
 
-	<section class="username">
-		<div id="change_username">
-			<input id="username" type="text" />
-			<button id="send_username" type="button">Change username</button>
-		</div>
-	</section>
-
+		<section class="username">
+			<div id="change_username">
+				<label>Username:</label>
+				<input id="username" type="text" placeholder="Please enter username..." />
+				<button id="send_username" type="button">Save</button>
+			</div>
+		</section>
+	</div>
 	<section id="chatroom">
 		<section id="feedback"></section>
 	</section>
